@@ -15,8 +15,11 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test:/\.js$/, loaders:['babel'], exclude:/node_modules/ },
+      { test:/\.js$/, loader:'babel', exclude:/node_modules/ },
       { test:/\.json$/, loader:'json' }
     ]
-  }
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({ comments:false, compress:{ warnings:false } })
+  ]
 };
