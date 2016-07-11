@@ -79,7 +79,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// base64json.stringify({ 'hello':'world' });
 	var stringify = exports.stringify = function stringify(obj) {
 	  var replacer = arguments.length <= 1 || arguments[1] === undefined ? null : arguments[1];
-	  var spaces = arguments.length <= 2 || arguments[2] === undefined ? 2 : arguments[2];
+	  var spaces = arguments.length <= 2 || arguments[2] === undefined ? 0 : arguments[2];
 
 	  return _buffer.Buffer.from(_json2.default.stringify(obj, replacer, spaces), 'ascii').toString('base64');
 	};

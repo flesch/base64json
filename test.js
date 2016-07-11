@@ -5,7 +5,7 @@ const assert = require('assert');
 
 const data = { 'hello':'world' };
 
-assert.equal(base64json.stringify(data), 'ewogICJoZWxsbyI6ICJ3b3JsZCIKfQ==');
-assert.deepEqual(base64json.parse('ewogICJoZWxsbyI6ICJ3b3JsZCIKfQ=='), data);
+assert.equal(base64json.stringify(data), 'eyJoZWxsbyI6IndvcmxkIn0=');
+assert.deepEqual(base64json.parse('eyJoZWxsbyI6IndvcmxkIn0='), data);
 
 console.log('✓ All tests passed!');

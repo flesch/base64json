@@ -4,7 +4,7 @@ import { Buffer } from 'buffer/';
 import JSON3 from 'json3';
 
 // base64json.stringify({ 'hello':'world' });
-export const stringify = (obj, replacer = null, spaces = 2) => {
+export const stringify = (obj, replacer = null, spaces = 0) => {
   return Buffer.from(JSON3.stringify(obj, replacer, spaces), 'ascii').toString('base64');
 }
 
