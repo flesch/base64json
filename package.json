@@ -39,8 +39,10 @@
     "url": "git+https://github.com/flesch/base64json.git"
   },
   "scripts": {
+    "build": "webpack --optimize-minimize",
     "develop": "webpack --progress --colors --watch",
-    "webpack": "webpack",
-    "test": "node test.js"
+    "prepublish": "npm run build",
+    "test": "npm run build && node test.js",
+    "webpack": "webpack"
   }
 }
