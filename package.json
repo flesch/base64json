@@ -44,5 +44,6 @@
     "prepublish": "npm run build",
     "test": "npm run build && node test.js",
     "webpack": "webpack"
-  }
+  },
+  "tonicExample": "const base64json = require('base64json');"
 }
