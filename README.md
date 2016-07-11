@@ -1,5 +1,7 @@
 # base64json
 
+![npm](https://img.shields.io/npm/v/base64json.svg) ![dependencies](https://david-dm.org/flesch/base64json.svg) [![Build Status](https://travis-ci.org/flesch/base64json.svg?branch=master)](https://travis-ci.org/flesch/base64json)
+
 Stringify and parse `JSON` data as **Base64**.
 
 `base64json.stringify()` and `base64json.parse()` work as you'd expect the native `JSON` methods to, however the input or output will be Base64.
