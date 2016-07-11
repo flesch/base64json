@@ -1,7 +1,7 @@
 {
   "name": "base64json",
   "description": "Stringify and parse JSON data as Base64.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "John Flesch",
     "email": "john@fles.ch"
